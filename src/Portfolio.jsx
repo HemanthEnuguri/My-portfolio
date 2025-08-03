@@ -108,8 +108,8 @@ export default function Portfolio() {
               className="flex flex-col items-center space-y-2 cursor-pointer transform transition-transform hover:scale-110"
               title={label}
             >
-              <Icon className="text-5xl " />
-              <span className="text-sm text-gray-700">{label}</span>
+              <Icon className="text-5xl" />
+              <span className="text-sm">{label}</span>
             </div>
           ))}
         </div>
