@@ -21,14 +21,14 @@ export default function Portfolio() {
   }, []);
 
   const skills = [
-    { src: "public/logos/aws.png", label: "AWS" },
-    { icon: SiGooglecloud, label: "GCP" },
-    { icon: SiTerraform, label: "Terraform" },
-    { icon: FaDocker, label: "Docker" },
-    { icon: FaJenkins, label: "Jenkins" },
-    { icon: FaPython, label: "Python" },
-    { icon: FaGitAlt, label: "Git" },
-    { icon: FaGithubIcon, label: "GitHub Actions" },
+    { src: "logos/aws.png", label: "AWS" },
+    { src: "logos/gcp.png", label: "GCP" },
+    { src: "logos/terraform.png", label: "Terraform" },
+    { src: "logos/github-actions.png", label: "GitHub Actions" },
+    { src: "logos/docker.png", label: "Docker" },
+    { src: "logos/jenkins.png", label: "Jenkins" },
+    { src: "logos/python.png", label: "Python" },
+
   ];
 
   return (
