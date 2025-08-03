@@ -36,13 +36,14 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-gradient-to-br from-blue-100 to-white">
         <motion.img
-          src="https://via.placeholder.com/150"
+          src="/logos/profile.jpg"
           alt="Hemanth Kumar Enuguri"
-          className="rounded-full w-36 h-36 mb-6 shadow-lg"
+          className="w-64 h-64 mb-6 shadow-lg object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         />
+
         <motion.h1
           className="text-4xl md:text-6xl font-bold mb-4 text-blue-900"
           initial={{ opacity: 0, y: -50 }}
