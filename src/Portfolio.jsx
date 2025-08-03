@@ -21,7 +21,7 @@ export default function Portfolio() {
   }, []);
 
   const skills = [
-    { src: "public/logos/aws.png", label: "AWS" },
+    { src: "logos/aws.png", label: "AWS" },
     { icon: SiGooglecloud, label: "GCP" },
     { icon: SiTerraform, label: "Terraform" },
     { icon: FaDocker, label: "Docker" },
