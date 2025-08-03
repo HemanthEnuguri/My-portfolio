@@ -51,3 +51,43 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
+      <section id="projects" className="bg-gray-100 py-12">
+        <div className="max-w-4xl mx-auto p-6">
+          <h2 className="text-3xl font-semibold mb-6">Highlighted Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[1, 2, 3, 4].map((num) => (
+              <div key={num} className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+                <h4 className="font-semibold text-lg mb-2">Project {num}</h4>
+                <p className="text-gray-600">Brief description of project {num} with technologies used and outcomes.</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="max-w-4xl mx-auto p-6">
+        <h2 className="text-3xl font-semibold mb-4">Let's Connect</h2>
+        <div className="flex flex-col space-y-4 text-lg">
+          <a href="mailto:enugurihemanthkumar@gmail.com" className="flex items-center space-x-2 hover:text-blue-600">
+            <FaEnvelope /> <span>enugurihemanthkumar@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/kumar-enuguri/" target="_blank" className="flex items-center space-x-2 hover:text-blue-600">
+            <FaLinkedin /> <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/HemanthEnuguri" target="_blank" className="flex items-center space-x-2 hover:text-blue-600">
+            <FaGithub /> <span>GitHub</span>
+          </a>
+          <div className="flex items-center space-x-2">
+            <FaMapMarkerAlt /> <span>Phoenix, Arizona</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-6 text-sm text-gray-500">
+        © 2025 Hemanth Kumar Enuguri. Built with React & Tailwind.
+      </footer>
+    </div>
+  );
+}
