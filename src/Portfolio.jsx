@@ -21,7 +21,7 @@ export default function Portfolio() {
   }, []);
 
   const skills = [
-    { icon: FaAws, label: "AWS" },
+    { src: "public/logos/aws.png", label: "AWS" },
     { icon: SiGooglecloud, label: "GCP" },
     { icon: SiTerraform, label: "Terraform" },
     { icon: FaDocker, label: "Docker" },
@@ -101,18 +101,23 @@ export default function Portfolio() {
       {/* Skills Section */}
       <section id="skills" className="max-w-4xl mx-auto p-6">
         <h2 className="text-3xl font-semibold mb-6 text-blue-900">Skills</h2>
-        <div className="flex flex-wrap gap-6 justify-center">
-          {skills.map(({ icon: Icon, label }) => (
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+          {skills.map(({ src, label }) => (
             <div
               key={label}
-              className="flex flex-col items-center space-y-2 cursor-pointer transform transition-transform hover:scale-110"
-              title={label}
+              className="flex flex-col items-center space-y-2 transform transition-transform hover:scale-110"
             >
-              <Icon className="text-5xl" />
-              <span className="text-sm">{label}</span>
+              <img
+                src={src}
+                alt={label}
+                className="w-14 h-14 object-contain"
+                title={label}
+              />
+              <span className="text-sm text-gray-800">{label}</span>
             </div>
           ))}
         </div>
+
       </section>
 
       {/* Projects Section */}
