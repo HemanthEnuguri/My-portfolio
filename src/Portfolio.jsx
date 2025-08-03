@@ -100,25 +100,27 @@ export default function Portfolio() {
 
       {/* Skills Section */}
       <section id="skills" className="max-w-4xl mx-auto p-6">
-        <h2 className="text-3xl font-semibold mb-6 text-blue-900">Skills</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-blue-400">Skills</h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
           {skills.map(({ src, label }) => (
             <div
               key={label}
               className="flex flex-col items-center space-y-2 transform transition-transform hover:scale-110"
             >
-              <img
-                src={src}
-                alt={label}
-                className="w-14 h-14 object-contain"
-                title={label}
-              />
-              <span className="text-sm text-gray-800">{label}</span>
+              <div className="w-20 h-20 bg-white rounded-xl shadow-md flex items-center justify-center p-2">
+                <img
+                  src={src}
+                  alt={label}
+                  className="w-full h-full object-contain"
+                  title={label}
+                />
+              </div>
+              <span className="text-sm text-white text-center">{label}</span>
             </div>
           ))}
         </div>
-
       </section>
+
 
       {/* Projects Section */}
       <section id="projects" className="bg-gray-100 py-12">
