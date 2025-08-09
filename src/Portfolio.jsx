@@ -112,8 +112,8 @@ export default function Portfolio() {
                 <img
                   src={src}
                   alt={label}
-                  className="w-full h-full object-contain"
                   title={label}
+                  className="max-w-[64px] max-h-[64px] object-contain"
                 />
               </div>
               <span className="text-sm text-white text-center">{label}</span>
