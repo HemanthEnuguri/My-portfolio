@@ -21,15 +21,15 @@ export default function Portfolio() {
   }, []);
 
   const skills = [
-    { src: "logos/aws.png", label: "AWS" },
-    { src: "logos/gcp.png", label: "GCP" },
-    { src: "logos/terraform.png", label: "Terraform" },
-    { src: "logos/github-actions.png", label: "GitHub Actions" },
-    { src: "logos/docker.png", label: "Docker" },
-    { src: "logos/jenkins.png", label: "Jenkins" },
-    { src: "logos/python.png", label: "Python" },
+  { src: "/logos/aws.svg", label: "AWS" },
+  { src: "/logos/gcp.svg", label: "GCP" },
+  { src: "/logos/terraform.svg", label: "Terraform" },
+  { src: "/logos/github-actions.svg", label: "GitHub Actions" },
+  { src: "/logos/docker.svg", label: "Docker" },
+  { src: "/logos/jenkins.svg", label: "Jenkins" },
+  { src: "/logos/python.svg", label: "Python" },
+];
 
-  ];
 
   return (
     <div className="bg-white text-gray-800 font-sans">
